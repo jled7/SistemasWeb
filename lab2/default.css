@@ -1,0 +1,32 @@
+body {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: rgb(230,230,230);
+}
+.container {
+	margin:0 auto;
+	width:700px;
+	background-color: rgb(220,220,220);
+}
+.title {
+	margin:20px;
+	text-align:right;
+	background-color: rgb(220,220,220);
+}
+.text{
+	left:300px;
+	position:relative;
+	background-color:black;
+	width:250px;
+}
+.image {
+	margin:20px;
+	position:relative;
+	border:15px solid black;
+	width:200px;
+}
+.container img{
+	width:200px;
+}
+h1 {
+	font-size:72px;
+}
