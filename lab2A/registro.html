@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>Registro</TITLE>
+	<LINK rel="STYLESHEET" href="estilos/default.css" type="text/css">
+  <script type="text/javascript">
+    var verValores = function() {
+      var sAux = "";
+      var frm = document.getElementById("registro");
+      for(var i=0;i<frm.elements.length;i++) {
+        sAux += "Nombre: " + frm.elements[i].name + " ";
+        sAux += "Valor: " + frm.elements[i].value + "\n";
+      }
+      alert(sAux);
+    }
+  </script>
+	<META charset="utf-8">
+</HEAD>
+<BODY>
+	<DIV class="container_form">
+		<DIV class='title'>
+			<h1>Registro</h1>
+
+		</DIV>
+    <hr>
+    <DIV class="formulario">
+      <form id="registro" name="registro" onsubmit="verValores()">
+      <p>  Email (Username): <input name="Email" type="text"></p>
+      <p>  Nombre y Apellidos: <input  name="NombreApellidos" type="text"></p>
+      <p>  Password: <input  name="Password" type="password"></p>
+      <p>  Repeat Password: <input  name="PasswordRepeated" type="password"></p>
+      <p>  Telefono: <input  name="Telefono" type="text"></p>
+      <label>Especialidad: </label>
+      <select id="Especialidad" name="Especialidad">
+        <option value="" selected="selected"> - selecciona - </option>
+        <option value="Ingenieria del Computadores"> Ingenieria del Computadores </option>
+        <option value="Computación"> Computación </option>
+        <option value="Ingenieria del Software"> Ingenieria del Software </option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <input type=submit>
+      </form>
+	   </DIV>
+</BODY>
+</HTML>
